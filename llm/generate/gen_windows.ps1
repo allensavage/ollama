@@ -9,10 +9,28 @@ function amdGPUs {
     # Current supported rocblas list from ROCm v6.1.2 on windows
     # https://rocm.docs.amd.com/projects/install-on-windows/en/latest/reference/system-requirements.html#windows-supported-gpus
     $GPU_LIST = @(
-        "gfx1030"
-        "gfx1100"
-        "gfx1101"
-        "gfx1102"
+        "gfx803"
+        "gfx900"
+        "gfx902"
+        "gfx904"
+        "gfx90c:xnack-"
+        "gfx906:xnack-"
+        "gfx908:xnack-"
+        "gfx90a:xnack+"
+        "gfx90a:xnack-"
+        "gfx940"
+        "gfx941"
+        "gfx942"
+        "gfx1010:xnack-"
+        "gfx1011"
+        "gfx1012:xnack-"
+        "gfx1031"
+        "gfx1032"
+        "gfx1033"
+        "gfx1034"
+        "gfx1035"
+        "gfx1036"
+        "gfx1103"
     )
     $GPU_LIST -join ';'
 }
